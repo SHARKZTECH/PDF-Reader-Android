@@ -11,7 +11,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/pdfs"
             android:layout_width="0dp"
@@ -19,7 +20,7 @@
             android:layout_weight="50"
             android:backgroundTint="#22463F"
             app:cardCornerRadius="20dp"
-            android:layout_margin="20dp">
+            android:layout_marginRight="10dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,8 +49,7 @@
             android:layout_height="170dp"
             android:layout_weight="50"
             android:backgroundTint="#22463F"
-            app:cardCornerRadius="20dp"
-            android:layout_margin="20dp">
+            app:cardCornerRadius="20dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +75,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="10dp">
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/ppt"
             android:layout_width="0dp"
@@ -83,7 +85,7 @@
             android:layout_weight="50"
             android:backgroundTint="#22463F"
             app:cardCornerRadius="20dp"
-            android:layout_margin="20dp">
+            android:layout_marginRight="10dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -98,7 +100,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="READ\n PTT"
+                    android:text="READ\n PPT"
                     android:textColor="@color/white"
                     android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
                     android:layout_marginTop="15dp"
@@ -112,8 +114,7 @@
             android:layout_height="170dp"
             android:layout_weight="50"
             android:backgroundTint="#22463F"
-            app:cardCornerRadius="20dp"
-            android:layout_margin="20dp">
+            app:cardCornerRadius="20dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,7 +129,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="READ\n PTX"
+                    android:text="READ\n PPTX"
                     android:textColor="@color/white"
                     android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
                     android:layout_marginTop="15dp"

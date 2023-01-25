@@ -20,7 +20,8 @@ public class PdfViewerctivity extends AppCompatActivity {
         pdfView=findViewById(R.id.pdfView);
 
         File file= (File) getIntent().getSerializableExtra("file");
-        pdfView.fromFile(file)
-                .load();
+        pdfView.fromFile(file).load();
+        pdfView.setBackground(getDrawable(R.drawable.ic_pdf));
+
     }
 }
