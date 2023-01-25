@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         pttx.setOnClickListener(view -> {
-            Toast.makeText(this, "Coming soon...", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,PttxActivity.class));
         });
 
         ptt.setOnClickListener(view -> {
-            Toast.makeText(this, "Coming soon...", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this,PttxActivity.class));
         });
     }
 }
