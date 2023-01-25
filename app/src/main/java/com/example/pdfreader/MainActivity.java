@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.card.MaterialCardView;
 
@@ -26,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
         
         docs.setOnClickListener(view -> {
             startActivity(new Intent(this,DocActivity.class));
+        });
+
+        pttx.setOnClickListener(view -> {
+            Toast.makeText(this, "Coming soon...", Toast.LENGTH_SHORT).show();
+        });
+
+        ptt.setOnClickListener(view -> {
+            Toast.makeText(this, "Coming soon...", Toast.LENGTH_SHORT).show();
         });
     }
 }
