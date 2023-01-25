@@ -4,15 +4,17 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:backgroundTint="#377981"
-    android:cardCornerRadius="7dp">
+    android:layout_margin="3dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="2dp">
+        android:padding="5dp">
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_pdf"/>
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_pdf"
+            android:background="@drawable/rect_border"
+            android:padding="4dp"/>
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
