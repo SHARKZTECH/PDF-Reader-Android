@@ -42,7 +42,6 @@ public class PdfActivity extends AppCompatActivity {
                         myAdapter=new MyAdapter(pdfs,getApplicationContext());
                         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
                         recyclerView.setAdapter(myAdapter);
-
                     }
 
                     @Override
