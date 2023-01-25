@@ -16,7 +16,7 @@
             android:id="@+id/pdfs"
             android:layout_width="0dp"
             android:layout_height="170dp"
-            android:layout_weight="40"
+            android:layout_weight="50"
             android:backgroundTint="#22463F"
             app:cardCornerRadius="20dp"
             android:layout_margin="20dp">
@@ -46,7 +46,7 @@
             android:id="@+id/docs"
             android:layout_width="0dp"
             android:layout_height="170dp"
-            android:layout_weight="40"
+            android:layout_weight="50"
             android:backgroundTint="#22463F"
             app:cardCornerRadius="20dp"
             android:layout_margin="20dp">
@@ -80,7 +80,7 @@
             android:id="@+id/ppt"
             android:layout_width="0dp"
             android:layout_height="170dp"
-            android:layout_weight="40"
+            android:layout_weight="50"
             android:backgroundTint="#22463F"
             app:cardCornerRadius="20dp"
             android:layout_margin="20dp">
@@ -110,7 +110,7 @@
             android:id="@+id/ptx"
             android:layout_width="0dp"
             android:layout_height="170dp"
-            android:layout_weight="40"
+            android:layout_weight="50"
             android:backgroundTint="#22463F"
             app:cardCornerRadius="20dp"
             android:layout_margin="20dp">

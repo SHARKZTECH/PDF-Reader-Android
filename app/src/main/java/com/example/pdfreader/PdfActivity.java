@@ -21,7 +21,6 @@ import java.util.ArrayList;
 public class PdfActivity extends AppCompatActivity {
     MyAdapter myAdapter;
     RecyclerView recyclerView;
-    String[] items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

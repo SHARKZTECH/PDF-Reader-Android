@@ -23,5 +23,9 @@ public class MainActivity extends AppCompatActivity {
         pdf.setOnClickListener(view -> {
             startActivity(new Intent(this,PdfActivity.class));
         });
+        
+        docs.setOnClickListener(view -> {
+            startActivity(new Intent(this,DocActivity.class));
+        });
     }
 }
