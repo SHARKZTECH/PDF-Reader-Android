@@ -1,18 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#0D0123">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pdfs"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:backgroundTint="#22463F"
+        app:cardCornerRadius="20dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_gravity="center">
+           <ImageView
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:background="@drawable/img_bg"
+               android:src="@drawable/ic_pdf"
+               android:padding="10dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="READ\n PDF"
+               android:textColor="@color/white"
+               android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+               android:layout_marginTop="15dp"
+               android:layout_gravity="center"/>
+       </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/docs"
+        android:layout_toRightOf="@id/pdfs"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:backgroundTint="#22463F"
+        app:cardCornerRadius="20dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/img_bg"
+                android:src="@drawable/ic_pdf"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="READ\n DOC"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ppt"
+        android:layout_below="@id/pdfs"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:backgroundTint="#22463F"
+        app:cardCornerRadius="20dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/img_bg"
+                android:src="@drawable/ic_pdf"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="READ\n PTT"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ptx"
+        android:layout_toRightOf="@id/ppt"
+        android:layout_below="@id/docs"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:backgroundTint="#22463F"
+        app:cardCornerRadius="20dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/img_bg"
+                android:src="@drawable/ic_pdf"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="READ\n PTX"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
