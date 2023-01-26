@@ -2,6 +2,7 @@ package com.example.pdfreader;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -19,9 +20,16 @@ public class PdfViewerctivity extends AppCompatActivity {
 
         pdfView=findViewById(R.id.pdfView);
 
-        File file= (File) getIntent().getSerializableExtra("file");
-        pdfView.fromFile(file).load();
-        pdfView.setBackground(getDrawable(R.drawable.ic_pdf));
+
+        if (Intent.ACTION_VIEW.equals(getIntent().getAction()) && getIntent().getData() != null) {
+            Uri uri = getIntent().getData();
+            pdfView.fromUri(uri).load();
+        }else{
+            File file= (File) getIntent().getSerializableExtra("file");
+            pdfView.fromFile(file).load();
+
+        }
+
 
     }
 }
