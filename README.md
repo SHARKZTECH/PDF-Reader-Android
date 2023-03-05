@@ -7,8 +7,7 @@ PDF Reader Android is an Android application that allows users to view and read 
 - Zoom in and out of pages
 
 # Requirements
-- Android 4.1 (Jelly Bean) or above
-- Minimum SDK version 16
+- Minimum SDK version 32
 - Latest version of Android Studio
 - Gradle build system
 
